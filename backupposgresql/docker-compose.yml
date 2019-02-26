@@ -1,0 +1,16 @@
+version: "3"
+services:
+  auto_backup_postgresql:
+    image: biolinh/autobkpostgresql:11
+    container_name: auto_backup_postgresql
+    environment:
+    - PSQL_USERNAME=myuser
+    - PSQL_PASSWORD=mypass
+    - PSQL_HOST=myhost
+    - PSQL_DBNAMES=all
+    volumes:
+    - ./backup:/backup
+
+
+
+ 
