@@ -1,5 +1,5 @@
 FROM biolinh/postgres-client:11
-MAINTAINER linh@jmango360.com
+MAINTAINER linh.bio@gmail.com
 
 ARG PSQL_USERNAME="postgres"
 ARG PSQL_PASSWORD
